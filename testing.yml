@@ -1,14 +1,5 @@
 ---
-- name: Install WordPress, MySQL, Nginx, and PHP-FPM
-  hosts: all
-  remote_user: root
-  # remote_user: user
-  # become: yes
-  # become_method: sudo
+- git:
+    repo: ssh://git@github.com/mylogin/hello.git
+    dest: /home/mylogin/hello
 
-  roles:
-    - common
-    - mysql
-    - nginx
-    - php-fpm
-    - wordpress
