@@ -1,5 +1,5 @@
 ---
 - git:
-    repo: ssh://git@github.com:bastianjoe64/test.git
+    repo: 'https://foosball.example.org/path/to/repo.git'
     dest: /home
 
